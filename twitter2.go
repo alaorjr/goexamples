@@ -51,7 +51,7 @@ func main() {
 
 	// FILTER
 	filterParams := &twitter.StreamFilterParams{
-		Track:         []string{"Caiado", "SEDI", "Governo de Goiás"},
+		Track:         []string{"Caiado", "Governo de Goiás"},
 		StallWarnings: twitter.Bool(true),
 	}
 	stream, err := client.Streams.Filter(filterParams)
